@@ -12,7 +12,7 @@ params:
   ShowBreadCrumbs: true
   ShowReadingTime: true
   homeInfoParams:
-    Title: Hi there !
+    Title: Hi there ! 👋
     Content: I'm a VFX artist and a homelab enthusiast/tinkerer. This site is a knowledge base of all the things I've learnt about.
 
   socialIcons: # optional
