@@ -11,6 +11,8 @@ params:
   ShowCodeCopyButtons: true
   ShowBreadCrumbs: true
   ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
   homeInfoParams:
     Title: Hi there ! 👋
     Content: I'm a VFX artist and a homelab enthusiast/tinkerer. This site is a knowledge base of all the things I've learnt about.
@@ -21,3 +23,21 @@ params:
     - name: KoFi
       title: Buy me a Ko-Fi :)
       url: "https://ko-fi.com/albertjohnsonpc"
+
+  cover:
+    linkFullImages: true
+
+menu:
+  main:
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 30
