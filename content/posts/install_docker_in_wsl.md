@@ -58,8 +58,8 @@ sudo nano /etc/wsl.conf
 ```bash
 [boot]
 systemd=true #Looks like this is set to true by default in newer wsl versions.
-[automount] #Optional. This will automatically mount your windows drives to the /mnt/ path.
-enabled=true
+[automount]
+enabled=true #Optional. This will automatically mount your windows drives to the /mnt/ path.
 ```
 
 * Click `Ctrl+O` then `Enter` to save and `Ctrl+X` to exit.
