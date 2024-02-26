@@ -172,3 +172,15 @@ https://localhost:9443
 >You will be presented with the initial setup page for Portainer Server.
 
 >I have istalled docker in WSL in a lot of ways and found this to be the easiest way.
+
+---
+
+By default the WSL instance will shut down automatically, after all the WSL terminals are closed. This is intended, a workaround for this from happening is by running this command.
+```powershell
+wsl --exec dbus-launch true
+```
+This will keep wsl running in the background.
+
+You can create a `bat` file with this command and add it to the `shell:startup` folder to make WSL start when windows boot up, which should work. 🤞
+
+Command is from [this](https://github.com/microsoft/WSL/issues/10138#issuecomment-1593856698) comment on a [github issue](https://github.com/microsoft/WSL/issues/10138)
