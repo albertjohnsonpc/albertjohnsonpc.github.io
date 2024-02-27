@@ -9,4 +9,4 @@ draft: true
 
 Open the windows start menu and search Turn Windows Features on and off.
 
-![Example image](https://media.gettyimages.com/id/875258576/photo/chinese-fishing-nets-at-sunset-fort-kochin-india.jpg?s=612x612&w=gi&k=20&c=m8bdqAxTr-LTL85rfQNLQ_5BeypnPhKAGo7cHuIJY-A=    )
+![Example image](/static/turn_on_win_features_1.jpg)
