@@ -3,6 +3,7 @@ title: 'Install Docker in WSL'
 summary: 'We will be installing docker in WSL (Windows Subsystem For Linux) so that we can run it without docker desktop.'
 date: 2024-02-25T09:12:46+05:30
 draft: true
+weight: 0
 categories: 'Windows'
 ---
 
