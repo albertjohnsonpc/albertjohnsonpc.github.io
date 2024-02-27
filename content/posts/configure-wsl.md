@@ -3,6 +3,7 @@ title: 'Configure WSL in your PC'
 summary: 'We will be seting up WSL (Windows Subsystem for Linux).'
 date: 2024-02-25T10:06:22+05:30
 draft: true
+categories: 'Windows'
 ---
 
 ## Using GUI (graphical user interface).

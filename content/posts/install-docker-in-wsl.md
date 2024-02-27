@@ -22,9 +22,9 @@ categories: 'Windows'
 
 ---
 
-## [Configure WSL in Windows]({{< ref "configure_wsl" >}}) {#1}
+## [Configure WSL in Windows]({{< ref "configure-wsl" >}}) {#1}
 
-Vist the ['Configure WSL in your PC']({{< ref "configure_wsl" >}}) post for more info. 
+Vist the ['Configure WSL in your PC']({{< ref "configure-wsl" >}}) post for more info. 
 
 ---
 
