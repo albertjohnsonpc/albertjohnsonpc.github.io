@@ -11,4 +11,4 @@ categories: 'Windows'
 
 Open the windows start menu and search Turn Windows Features on and off.
 
-![Example image](/static/turn_on_win_features_1.jpg)
+![Example image](/static/turn_on_win_features_1.png)
