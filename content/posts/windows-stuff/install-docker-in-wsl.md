@@ -33,7 +33,7 @@ Vist the ['Configure WSL in your PC']({{< ref "configure-wsl" >}}) post for more
 
 ---
 
-The easiest way to install ubuntu is to download it from the terminal or you can download it from the [Microsort Store.](https://apps.microsoft.com/detail/9pdxgncfsczv?hl=en-us&gl=IN)
+The easiest way to install ubuntu is to download it from the terminal or you can download it from the [Microsoft Store.](https://apps.microsoft.com/detail/9pdxgncfsczv?hl=en-us&gl=IN)
 
 You can use this command `wsl --list --online` in the [Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?rtc=1&hl=en-in&gl=IN) to view all the available distros to install. Then run this command `wsl --install -d <DistroName>`.
 
@@ -72,7 +72,7 @@ enabled=true #Optional. This will automatically mount your windows drives to the
 
 ---
 
-> First two instuctions are from the official [Docker Documentation.](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
+> First two instructions are from the official [Docker Documentation.](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
 
 Before you install Docker Engine for the first time on a new host machine, you need to set up the Docker repository. Afterward, you can install and update Docker from the repository.
 
@@ -122,7 +122,7 @@ sudo service docker start
 service docker status
 ```
 
-5. Chech docker version just for fun
+5. Check docker version just for fun
 
 ```bash
 docker --version
@@ -142,7 +142,7 @@ sudo usermod -aG docker $USER
 
 ---
 
-> We will be istalling a docker orchestrator called [Portainer.](https://www.portainer.io/)
+> We will be installing a docker orchestrator called [Portainer.](https://www.portainer.io/)
 
 * First, create the volume that Portainer Server will use to store its database:
 
@@ -172,7 +172,7 @@ https://localhost:9443
 
 >You will be presented with the initial setup page for Portainer Server.
 
->I have istalled docker in WSL in a lot of ways and found this to be the easiest way.
+>I have installed docker in WSL in a lot of ways and found this to be the easiest way.
 
 ---
 

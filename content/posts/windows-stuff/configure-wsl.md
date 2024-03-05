@@ -1,6 +1,6 @@
 ---
 title: 'Configure WSL in your PC'
-summary: 'We will be seting up WSL (Windows Subsystem for Linux).'
+summary: 'We will be setting up WSL (Windows Subsystem for Linux).'
 date: 2024-02-25T10:06:22+05:30
 draft: true
 weight: 0
