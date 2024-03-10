@@ -18,23 +18,27 @@ params:
   ShowShareButtons: true
   ShowPostNavLinks: true
 
-  #profileMode:
-    #enabled: true
-    #title: "Hi there ! 👋" # optional default will be site title
-    #subtitle: "I'm a VFX artist and a homelab enthusiast/tinkerer. This site is a knowledge base of all the things I've learnt about."
-    #imageUrl: "" # optional
-    #imageTitle: "" # optional
-    #imageWidth: 120 # custom size
-    #imageHeight: 120 # custom size
-    #buttons:
-    #  - name: Posts
-    #    url: "/posts"
-    #  - name: Github
-    #    url: "https://github.com/albertjohnsonpc"
+  profileMode:
+    enabled: true
+    title: "Hi there ! 👋" # optional default will be site title
+    subtitle: "I'm a VFX artist and a homelab enthusiast/tinkerer. This site is a knowledge base of all the things I've learnt about."
+    imageUrl: "profile/profile.png" # optional
+    imageTitle: "" # optional
+    imageWidth: 200 # custom size
+    imageHeight: 200 # custom size
+    buttons:
+      - name: Demo Reel
+        url: "https://youtu.be/aTRugRa0dLE"
+      - name: Posts
+        url: "/posts"
+      - name: Archives
+        url: "/archives"
+      #- name: Github
+      #  url: "https://github.com/albertjohnsonpc"
 
-  homeInfoParams:
-    Title: Hi there ! 👋
-    Content: I'm a VFX artist and a homelab enthusiast/tinkerer. This site is a knowledge base of all the things I've learnt about.
+  #homeInfoParams:
+    #Title: Hi there ! 👋
+    #Content: I'm a VFX artist and a homelab enthusiast/tinkerer. This site is a knowledge base of all the things I've learnt about.
 
   socialIcons: # optional
     - name: github
