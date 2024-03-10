@@ -3,16 +3,35 @@ languageCode: en-us
 title: albertjohnsonpc
 theme: PaperMod
 
+enableInlineShortcodes: true
+enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+enableEmoji: true
 
 params:
+  #env: production
   ShowCodeCopyButtons: true
   ShowBreadCrumbs: true
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
+
+  #profileMode:
+    #enabled: true
+    #title: "Hi there ! 👋" # optional default will be site title
+    #subtitle: "I'm a VFX artist and a homelab enthusiast/tinkerer. This site is a knowledge base of all the things I've learnt about."
+    #imageUrl: "" # optional
+    #imageTitle: "" # optional
+    #imageWidth: 120 # custom size
+    #imageHeight: 120 # custom size
+    #buttons:
+    #  - name: Posts
+    #    url: "/posts"
+    #  - name: Github
+    #    url: "https://github.com/albertjohnsonpc"
+
   homeInfoParams:
     Title: Hi there ! 👋
     Content: I'm a VFX artist and a homelab enthusiast/tinkerer. This site is a knowledge base of all the things I've learnt about.
@@ -33,6 +52,9 @@ menu:
       name: Categories
       url: /categories/
       weight: 10
+    - name: Search
+      url: search/
+      weight: 15
     - identifier: tags
       name: Tags
       url: /tags/
@@ -41,3 +63,10 @@ menu:
       name: Archives
       url: /archives/
       weight: 30
+
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
