@@ -2,19 +2,16 @@
 title: 'Configure WSL in your PC'
 summary: 'We will be setting up WSL (Windows Subsystem for Linux).'
 date: 2024-02-25T10:06:22+05:30
-draft: true
-weight: 0
+draft: false
+weight: 1
 categories: 'Windows'
-#cover:
-  #image: ""
+cover:
+  image: "/windows-stuff/configure-wsl/cover.png"
      # can also paste direct link from external site
      # ex. https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png
-  #alt: "hi"
+  alt: "cover image"
   #caption: "nop"
   #relative: false # To use relative path for cover image, used in hugo Page-bundles
-  #params:
-  #  cover:
-  #    linkFullImages: false
 ---
 
 
@@ -33,12 +30,12 @@ wsl --install
 Open the windows start menu and search Turn Windows Features on and off.
 
 
-{{< figure src="/configure-wsl/turn_on_win_features_1.png" alt="Example Image" width="600" align="center" >}}
+{{< figure src="/windows-stuff/configure-wsl/turn_on_win_features_1.png" alt="Example Image" width="600" align="center" >}}
 
 
 Turn on `Virtual Machine Platform`, `Windows Subsystem for Linux` and click `OK`
 
-{{< figure src="/configure-wsl/turn_on_win_features_2.png" alt="Example Image" width="600" align="center" >}}
+{{< figure src="/windows-stuff/configure-wsl/turn_on_win_features_2.png" alt="Example Image" width="600" align="center" >}}
 
 
 Wait for some time and this will enable necessary features. 

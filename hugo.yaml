@@ -11,6 +11,10 @@ buildExpired: false
 enableEmoji: true
 
 params:
+  editPost:
+    URL: "https://github.com/albertjohnsonpc/albertjohnsonpc.github.io/tree/main/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
   #env: production
   ShowCodeCopyButtons: true
   ShowBreadCrumbs: true
@@ -48,7 +52,7 @@ params:
       url: "https://ko-fi.com/albertjohnsonpc"
 
   cover:
-    linkFullImages: true
+    linkFullImages: false
 
 menu:
   main:

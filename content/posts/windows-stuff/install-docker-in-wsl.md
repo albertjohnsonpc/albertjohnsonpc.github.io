@@ -2,9 +2,12 @@
 title: 'Install Docker in WSL'
 summary: 'We will be installing docker in WSL (Windows Subsystem For Linux) so that we can run it without docker desktop.'
 date: 2024-02-25T09:12:46+05:30
-draft: true
+draft: false
 weight: 0
 categories: 'Windows'
+cover:
+  image: "/windows-stuff/install-docker-in-wsl/cover.png"
+  alt: "cover image"
 ---
 
 # How to Install Docker in WSL (Windows Subsystem For Linux)
@@ -19,13 +22,13 @@ categories: 'Windows'
 * [Install any distro in WSL (Ubuntu in my Case).]({{< ref "#2" >}})
 * [Setup `systemd` in WSL.]({{< ref "#3" >}})
 * [Install Docker.]({{< ref "#4" >}})
-* [Install Portainer.]({{< ref "#5" >}})
+* [Install Portainer (optional).]({{< ref "#5" >}})
 
 ---
 
 ## [Configure WSL in Windows]({{< ref "configure-wsl" >}}) {#1}
 
-Vist the ['Configure WSL in your PC']({{< ref "configure-wsl" >}}) post for more info. 
+Vist the [`Configure WSL in your PC`]({{< ref "configure-wsl" >}}) post for more info. 
 
 ---
 
@@ -33,13 +36,13 @@ Vist the ['Configure WSL in your PC']({{< ref "configure-wsl" >}}) post for more
 
 ---
 
-The easiest way to install ubuntu is to download it from the terminal or you can download it from the [Microsoft Store.](https://apps.microsoft.com/detail/9pdxgncfsczv?hl=en-us&gl=IN)
+The easiest way to install ubuntu is to download it from the terminal, or you can download it from the [Microsoft Store.](https://apps.microsoft.com/detail/9pdxgncfsczv?hl=en-us&gl=IN)
 
-You can use this command `wsl --list --online` in the [Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?rtc=1&hl=en-in&gl=IN) to view all the available distros to install. Then run this command `wsl --install -d <DistroName>`.
+You can use this command `wsl --list --online` in the [Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?rtc=1&hl=en-in&gl=IN) to view all of the available distros to install. Then run this command `wsl --install -d <DistroName>`.
 
 In our case it is `wsl --install -d Ubuntu`.
 
-Then you may need to create a username and password to continue, follow as instructed.
+Then you need to create a username and password to continue, follow as instructed.
 
 After you created the user account, follow the instructions down below to install docker in Ubuntu WSL.
 
@@ -63,8 +66,8 @@ systemd=true #Looks like this is set to true by default in newer wsl versions.
 enabled=true #Optional. This will automatically mount your windows drives to the /mnt/ path.
 ```
 
-* Click `Ctrl+O` then `Enter` to save and `Ctrl+X` to exit.
-* Done !!
+* Click `ctrl+o` then `Enter` to save and `ctrl+x` to exit.
+* Done !! ✅
 
 ---
 
@@ -102,7 +105,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 
 ### OR Install using the convenience script (Easy)
 
->Read the [Documentation](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script) before installing docker with this script to understand potential problems.
+> ⚠️ Read the [Documentation](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script) before installing docker with this script to understand potential problems ⚠️
 
 ```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
@@ -122,7 +125,7 @@ sudo service docker start
 service docker status
 ```
 
-5. Check docker version just for fun
+5. Check docker version 😮‍💨
 
 ```bash
 docker --version
@@ -146,7 +149,7 @@ sudo usermod -aG docker $USER
 
 * First, create the volume that Portainer Server will use to store its database:
 
-```bas
+```bash
 docker volume create portainer_data
 ```
 
@@ -166,7 +169,7 @@ CONTAINER ID   IMAGE                           COMMAND        CREATED          S
 
 * Now that the installation is complete, you can log into your Portainer Server instance by opening a web browser and going to:
 
-```http
+```https
 https://localhost:9443
 ```
 
@@ -182,6 +185,6 @@ wsl --exec dbus-launch true
 ```
 This will keep wsl running in the background.
 
-You can create a `bat` file with this command and add it to the `shell:startup` folder to make WSL start when windows boot up, which should work. 🤞
+You can create a `bat` file with this command and add it to the `shell:startup` folder to make WSL start when windows boots up, which should work. 🤞
 
 Command is from [this](https://github.com/microsoft/WSL/issues/10138#issuecomment-1593856698) comment on a [github issue](https://github.com/microsoft/WSL/issues/10138)
