@@ -2,7 +2,7 @@
 title: 'Configure WSL in your PC'
 summary: 'We will be setting up WSL (Windows Subsystem for Linux).'
 date: 2024-02-25T10:06:22+05:30
-draft: false
+draft: true
 weight: 0
 categories: 'Windows'
 #cover:
