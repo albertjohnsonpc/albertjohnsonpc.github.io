@@ -10,7 +10,7 @@ cover:
   alt: "cover image"
 ---
 
-# Install WSA ( Windows Subsystem For Android )
+### Install WSA ( Windows Subsystem For Android )
 
 > We need to install a modified version of windows subsystem for android in which [root access](https://en.wikipedia.org/wiki/Rooting_(Android)) is enabled by default.
 
@@ -25,7 +25,7 @@ cover:
 > I installed and tested some versions of WSA and Version [`2306.40000.4.0`](https://github.com/MustardChef/WSABuilds/releases/tag/Windows_11_2306.40000.4.0) worked best and without any issues. But feel free to experiment with newer versions.
 
 
-# Setup LSposed and Pixelify-Google-Photos
+### Setup LSposed and Pixelify-Google-Photos
 
 
 * After successfully installing WSA, open the additional settings in the app, and then turn on the `Share user folders` under the Experimental features tab and set the folder you want to share with WSA.
