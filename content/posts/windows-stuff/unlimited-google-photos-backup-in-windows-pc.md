@@ -100,3 +100,8 @@ cover:
 {{< figure src="/windows-stuff/unlimited-google-photos-backup-in-windows-pc/google-photos.png" alt="Example Image" width="700" align="center" >}}
 
 > Was that too long !! 🤷‍♂️
+
+### Troubleshooting ⚙️
+
+> Uploading seems stuck for a long time ?
+* Restart WSA and open Google Photos app again, that might fix it.
