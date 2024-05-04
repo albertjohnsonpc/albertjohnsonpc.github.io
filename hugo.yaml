@@ -50,6 +50,8 @@ params:
     - name: KoFi
       title: Buy me a Ko-Fi :)
       url: "https://ko-fi.com/albertjohnsonpc"
+    - name: behance
+      url: "https://www.behance.net/albertjohnsonpc"
 
   cover:
     linkFullImages: false
