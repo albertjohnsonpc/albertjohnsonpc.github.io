@@ -52,6 +52,8 @@ params:
       url: "https://ko-fi.com/albertjohnsonpc"
     - name: behance
       url: "https://www.behance.net/albertjohnsonpc"
+    - name: imdb
+      url: "https://www.imdb.com/name/nm14342832"
 
   cover:
     linkFullImages: false
